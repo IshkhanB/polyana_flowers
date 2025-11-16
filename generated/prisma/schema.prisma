@@ -1,0 +1,109 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:Ishkhan888@localhost:5432/polyana?schema=public"
+}
+
+model Type {
+  id      Int       @id @default(autoincrement())
+  title   String
+  product Product[]
+
+  @@map("type")
+}
+
+model Product {
+  id          Int         @id @default(autoincrement())
+  title       String
+  description String
+  price       Int
+  sale        Int?
+  hits        Boolean     @default(false)
+  publish     Boolean     @default(true)
+  created_at  DateTime    @default(now())
+  updated_at  DateTime    @updatedAt
+  type_id     Int
+  occasion    Occasion[] // Повод: "8 марта", "День рождения" (необязательно)
+  img         Image[]
+  order       OrderItem[]
+  type        Type        @relation(fields: [type_id], references: [id])
+
+  @@map("product")
+}
+
+model Order {
+  id              Int          @id @default(autoincrement()) // Уникальный ID заказа
+  customer_name   String       @db.VarChar(255) // Имя клиента (обязательно)
+  phone           String       @db.VarChar(20) // Телефон (для связи)
+  email           String?      @db.VarChar(255) // Email (необязательно)
+  recipient_name  String?      @db.VarChar(255) // Имя клиента (обязательно)
+  recipient_phone String?      @db.VarChar(20) // Телефон (для связи)
+  address         String?      @db.Text // Адрес доставки (необязательно)
+  message         String?      @db.Text // Адрес сообщение (необязательно)
+  comment         String?      @db.Text // Комментарий к заказу (необязательно)
+  delivery_at     DateTime // Желаемая дата и время доставки (необязательно)
+  total           Float // Общая сумма заказа (фиксированная!)
+  created_at      DateTime     @default(now()) // Дата создания заказа
+  payment_type    Payment_type
+  status          Order_status @default(NEW) // Статус: new, paid, delivered, cancelled
+  items           OrderItem[]
+
+  @@map("orders") // Опционально: явное имя таблицы в БД
+}
+
+model OrderItem {
+  id         Int     @id @default(autoincrement())
+  order_id   Int // Ссылка на заказ
+  product_id Int // Ссылка на товар
+  quantity   Int // Сколько штук этого букета
+  price      Float // Цена на момент заказа (важно! цена может измениться позже)
+  product    Product @relation(fields: [product_id], references: [id]) // Связь с товаром
+  order      Order   @relation(fields: [order_id], references: [id], onDelete: Cascade) // При удалении заказа — удаляются и позиции
+
+  @@unique([order_id, product_id]) // Один товар не может быть добавлен дважды в один заказ
+  @@map("order_item")
+}
+
+model Occasion {
+  id      Int       @id @default(autoincrement())
+  img     String
+  name    String
+  product Product[]
+
+  @@map("occasion")
+}
+
+model Image {
+  id         Int     @id @default(autoincrement())
+  img        String
+  product_id Int
+  product    Product @relation(fields: [product_id], references: [id])
+
+  @@map("image")
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  pass  String  @default("nopass")
+  name  String?
+  token String  @unique @default(uuid())
+
+  @@map("user")
+}
+
+enum Payment_type {
+  CASH
+  ONLINE
+}
+
+enum Order_status {
+  NEW
+  PAID
+  DELIVERED
+  CANCELLED
+}
