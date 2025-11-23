@@ -1,6 +1,7 @@
 import prisma from "@@/server/utils/prisma"
 
 export default defineEventHandler(async (event) => {
+  try {
     const data = await readBody(event)
     if (data.email && data.pass) {
       const user = await prisma.user.findUnique({
@@ -21,5 +22,9 @@ export default defineEventHandler(async (event) => {
         error: 'not found'
       }
     }
+  } catch (e) {
+    console.log(e)
+    return 'error'
+  }
   
 })
