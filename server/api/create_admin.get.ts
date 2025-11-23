@@ -9,7 +9,7 @@ export default defineEventHandler(async (event)=>{
         }
       })
       
-      return process.env.ADMIN_PASS
+      return 'ok'
     }catch(e) {
       console.log(e)
       return 'error'
