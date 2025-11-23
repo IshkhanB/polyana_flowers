@@ -22,10 +22,10 @@
     "swiper": "^11.2.1",
     "vue": "latest",
     "vue-router": "latest",
-    "xml": "^1.0.1"
+    "xml": "^1.0.1",
+    "@prisma/client": "^6.11.0"
   },
   "devDependencies": {
-    "@prisma/client": "^6.11.0",
     "@types/busboy": "^1.5.4",
     "@types/heic-convert": "^2.1.0",
     "gh-pages": "^6.3.0",
