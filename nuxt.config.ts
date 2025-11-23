@@ -46,6 +46,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
+          // @ts-ignore
           api: 'modern-compiler',
         },
       },
@@ -67,13 +68,13 @@ export default defineNuxtConfig({
     // },
   },
 
-  // nitro: {
-  //   esbuild: {
-  //     options: {
-  //       target: 'esnext'
-  //     }
-  //   }
-  // },
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext'
+      }
+    }
+  },
 
   image: {
     dir: path.join(process.cwd(), '../public'),
