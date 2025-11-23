@@ -50,30 +50,30 @@ export default defineNuxtConfig({
         },
       },
     },
-    optimizeDeps: { // 👈 optimizedeps
-      esbuildOptions: {
-        target: "esnext",
-        // Node.js global to browser globalThis
-        define: {
-          global: 'globalThis'
-        },
-        supported: {
-          bigint: true
-        },
-      }
-    },
-    build: {
-      target: "esnext", // 👈 build.target
-    },
+    // optimizeDeps: { // 👈 optimizedeps
+    //   esbuildOptions: {
+    //     target: "esnext",
+    //     // Node.js global to browser globalThis
+    //     define: {
+    //       global: 'globalThis'
+    //     },
+    //     supported: {
+    //       bigint: true
+    //     },
+    //   }
+    // },
+    // build: {
+    //   target: "esnext", // 👈 build.target
+    // },
   },
 
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext'
-      }
-    }
-  },
+  // nitro: {
+  //   esbuild: {
+  //     options: {
+  //       target: 'esnext'
+  //     }
+  //   }
+  // },
 
   image: {
     dir: path.join(process.cwd(), '../public'),

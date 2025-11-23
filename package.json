@@ -18,17 +18,17 @@
     "nuxi": "^3.20.0",
     "nuxt": "^3.6.0",
     "nuxt-swiper": "^2.0.0",
+    "prisma": "^6.19.0",
     "swiper": "^11.2.1",
     "vue": "latest",
     "vue-router": "latest",
     "xml": "^1.0.1"
   },
   "devDependencies": {
-    "@prisma/client": "^6.10.1",
+    "@prisma/client": "^6.11.0",
     "@types/busboy": "^1.5.4",
     "@types/heic-convert": "^2.1.0",
     "gh-pages": "^6.3.0",
-    "prisma": "^6.10.1",
     "sass": "^1.79.5"
   },
   "overrides": {
