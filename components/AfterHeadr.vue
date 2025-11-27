@@ -8,11 +8,11 @@
     <p>FLOWER MARKET<br> больше, чем просто цветы </p>
     <!-- букетов по всему сочи || букетов в любую точку сочи -->
   </div>
-  <div class="baner_div">
-      <!-- <div> <p>Лучшие цены</p></div>
-      <div>Фотоотчет</div>
-      <div>Лучшие цены</div> -->
-    </div>
+    <!-- <div class="baner_div">
+        <div> <p>Лучшие цены</p></div>
+        <div>Фотоотчет</div>
+        <div>Лучшие цены</div>
+      </div> -->
   </div>
 
 </template>
