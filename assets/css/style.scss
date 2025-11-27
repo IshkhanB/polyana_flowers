@@ -90,7 +90,7 @@ background-color: rgb(181, 181, 181);
   width: 250px;
   background-color: #02a85888;;
   border: 2px solid rgb(0, 164, 71);
-  border-radius: 25px 0 0 25px;  
+  border-radius: 25px;  
   position: fixed;
   top: 100px;
   right: 20px;
@@ -115,5 +115,10 @@ background-color: rgb(181, 181, 181);
 }
 .checkout_btn[disabled] {
   filter: grayscale(80);
+}
+@media screen and (max-width: 500px){
+  .menu_lk{
+  position: static;
+}
 }
 

@@ -156,7 +156,7 @@ const goToAnchor = (hash:string)=>{
   }
   
 }
-@media screen and (max-width: 640px) {
+  @media screen and (max-width: 640px) {
   .header_nav{
     display: none;
   }

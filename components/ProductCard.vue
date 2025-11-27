@@ -15,11 +15,10 @@
     <div class="card_bottom">
       <NuxtLink :to="`/${product?.type?.title}/${product?.id}`"  class="card__info"> Подробнее</NuxtLink>
       <NuxtLink id="two" class="card__add">Добавить в корзину</NuxtLink>
-      <!-- {{console.log(product.img)}} -->
     </div>
     <div class="card__price card__price--discount">{{ product?.price }}</div>
     <p class="info_flower">{{ product?.description }}</p>
-    <NuxtLink :to="`/${product?.type?.title}/${product?.id}`" class="card__title"> {{ product?.title }} </NuxtLink>
+    <NuxtLink   :to="`/${product?.type?.title}/${product?.id}`" class="card__title"> {{ product?.title }} </NuxtLink>
     {{ product.price }}
   </div>
   

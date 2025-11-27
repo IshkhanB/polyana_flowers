@@ -2,7 +2,7 @@
   <div>
 
     <form class="forma_zapolneniya" method="put" @submit.prevent="upload">
-      
+      <label>Внесите изменения!</label>
       <input type="text" name="title" v-model="product.title" placeholder="Заголовок">
       <textarea type="text" name="description" v-model="product.description" placeholder="Текст публикации"></textarea>
     
@@ -34,8 +34,10 @@
         </div>
       </div>
     </div>
-    <button style="background-color: rgb(168, 168, 177);margin: 10px; padding: 5px;" @click.prevent="upload()" >Сохранить</button> 
-    <NuxtLink style="background-color: rgb(168, 168, 177); margin: 10px; padding: 5px;" to="http://localhost:3000/lk/edit" > Назад</NuxtLink> 
+    <div class="seve_back">
+      <button style="background-color: rgb(168, 168, 177);margin: 10px; padding: 5px;" @click.prevent="upload()" >Сохранить</button> 
+      <NuxtLink style="background-color: rgb(168, 168, 177); margin: 10px; padding: 5px;" to="http://localhost:3000/lk/edit" > Назад</NuxtLink> 
+    </div>
   </form>
  </div>
 </template>
@@ -164,7 +166,7 @@ body{
   /* background-color: #0f172a; */
   margin: 0 auto;
   padding:10px ;
-  width: 600px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,8 +234,15 @@ swiper-slide>img {
   justify-content: center;
   font-size: 14px;
 }
-
+.seve_back{
+  margin: 0 auto;
+}
 .remove-button:hover {
   background: rgba(255, 0, 0, 1);
+}
+@media screen and (max-width: 500px) {
+.seve_back{
+margin-bottom:350px;
+}
 }
 </style>

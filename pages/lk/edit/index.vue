@@ -128,7 +128,7 @@ const upload = async () => {
 .forma_zapolneniya{
   margin: 0 auto;
   padding:10px ;
-  width: 600px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;

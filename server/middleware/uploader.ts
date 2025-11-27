@@ -6,7 +6,7 @@ import convert from 'heic-convert'
 export default defineEventHandler(async (event) => {
   if (event.method === 'POST'||event.method === 'PUT') {
     const contentType = getRequestHeader(event, "content-type")
-    console.log('hit', contentType?.includes('multipart/form-data;'))
+    // console.log('hit', contentType?.includes('multipart/form-data;'))  Нужно уточнить !!!!!!!!!
     if (contentType?.includes('multipart/form-data;')) await useFiles(event)
   }
 })
