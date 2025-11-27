@@ -11,26 +11,26 @@
       </NuxtLink>
       <nav class="header_nav">
         <a class="header_a" href="/#catalog" aria-label="Перейти к каталогу">Каталог</a>
-        <a class="header_a" href="/#delivery" @click.prevent="goToAnchor('#delivery')">Доставка и оплата</a>
+        <!-- <a class="header_a" href="/#delivery" @click.prevent="goToAnchor('#delivery')">Доставка и оплата</a> -->
         <!-- <a class="header_a" href="#">FAQ</a> -->
-        <a class="header_a" href="/about_us" @click.prevent="goToAnchor('#about_us')">О нас</a>
+        <!-- <a class="header_a" href="/about_us" @click.prevent="goToAnchor('#about_us')">О нас</a>  -->
         <!-- <a class="header_a" href="/reviews" @click.prevent="goToAnchor('#reviews')">Отзывы</a>  -->
       </nav>
       <div class="iconci_v_div">
-        <p class="icon_search">
+        <!-- <p class="icon_search">
           <NuxtImg  class="icon" src="icon/ic_sharp-search_1.svg" alt="icon"/> 
         </p>
         <p class="icon_search">
           <NuxtImg class="icon" src="icon/icon-park-outline_li.svg" alt=""/>
-        </p>
+        </p> -->
         <!-- <p class="icon_search">
           <NuxtImg class="icon" src="~/assets/icon/ic_outline-shopping-.svg" alt="Корзина" />
         </p> -->
-        <button class="icon-button" aria-label="Корзина" @click="cartStore.visible = true" >
+        <!-- <button class="icon-button" aria-label="Корзина" @click="cartStore.visible = true" >
           <NuxtImg class="icon" src="icon/ic_outline-shopping-.svg" alt="Корзина"/>
-          <span class="icon-count">{{ cartStore.count}}</span> <!-- Счетчик -->
+          <span class="icon-count">{{ cartStore.count}}</span> 
           
-        </button>
+        </button> -->
       </div>
     </header>
   </div>

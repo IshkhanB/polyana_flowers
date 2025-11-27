@@ -97,8 +97,72 @@
   }
 }
 @media screen and (max-width:500px) {
+  .fon_div{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px ;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .fon_div_text{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fon_div_text>p{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: #595959;
+    font-size: 50px;
+    font-family: 'Cormorant', Arial, sans-serif;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 63px;
+  }
+
+  .img_fon_after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 500px;
+    object-fit: cover;
+  }
+  .img_girl{
+    width: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    top: -90px;
+    right: 0px;
+  }
+  .baner_div{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .baner_div>div{
+    padding: 10px;
+    text-align: center;
+    background-color: #c0c0c0a8;
+    border-radius: 5px;
+    border:  0px solid black;
+    box-sizing: border-box;
+  }
+  .baner_div>p{
+    display: block;
+    filter: blur(0px);
+  }
   .img_fon_header{
-  min-width: 500px;
+    min-width: 500px;
   }
 }
 

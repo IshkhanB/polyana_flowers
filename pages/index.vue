@@ -5,9 +5,9 @@
     <!-- <FilterMenu/> -->
     <ProductsComp :products="products"/>
     <AboutUs/>
-    <DeliveryMap :delivery="deliveryStore.arr"/>
-    <HowPay/>
-    <CustomerReviews :reviews="reviewsStore.arr"/>
+    <!-- <DeliveryMap :delivery="deliveryStore.arr"/> -->
+    <!-- <HowPay/> -->
+    <!-- <CustomerReviews :reviews="reviewsStore.arr"/> -->
   </SubstrateComponent>
 </template>
 
