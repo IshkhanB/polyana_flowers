@@ -47,6 +47,11 @@
     max-width: 1024px;
   }
 }
+@media screen and (max-width: 800px) {
+  .img_service{
+    max-width: 800px;
+  }
+}
 @media screen and (max-width:500px) {
   .img_service{
     max-width: 500px;
