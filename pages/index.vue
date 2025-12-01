@@ -5,6 +5,7 @@
     <!-- <FilterMenu/> -->
     <ProductsComp :products="products"/>
     <AboutUs/>
+    <ServiceCulture/>
     <!-- <DeliveryMap :delivery="deliveryStore.arr"/> -->
     <!-- <HowPay/> -->
     <!-- <CustomerReviews :reviews="reviewsStore.arr"/> -->

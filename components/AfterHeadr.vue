@@ -1,20 +1,11 @@
 <template>
   <div class="fon_div">
-    <nuxt-img class="img_fon_after" src="/icon/group_975_1.png" alt="Fon" />
-  <div>
-    <NuxtImg class="img_girl" src="/icon/noroot_1.png" alt="girl-flowers" />
-  </div>
-  <div class="fon_div_text">
+      <NuxtImg class="img_fon_after" src="icon/group_975_1.png" alt="Fon" />
+      <NuxtImg class="img_girl" src="icon/front_about_us.png" alt="girl-flowers" />
+    <div class="fon_div_text">
     <p>FLOWER MARKET<br> больше, чем просто цветы </p>
-    <!-- букетов по всему сочи || букетов в любую точку сочи -->
+    </div>
   </div>
-    <!-- <div class="baner_div">
-        <div> <p>Лучшие цены</p></div>
-        <div>Фотоотчет</div>
-        <div>Лучшие цены</div>
-      </div> -->
-  </div>
-
 </template>
 
 <style>
@@ -60,6 +51,7 @@
   position: absolute;
   top: -90px;
   right: 0px;
+  overflow-y: visible;
 }
 .baner_div{
   position: absolute;
@@ -98,13 +90,8 @@
 }
 @media screen and (max-width:500px) {
   .fon_div{
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1400px ;
+    max-width: 500px ;
     height: 400px;
-    overflow: hidden;
-    border-radius: 25px;
   }
   .fon_div_text{
     margin: 0 auto;
@@ -139,6 +126,7 @@
     position: absolute;
     top: -90px;
     right: 0px;
+    /* overflow-wrap: visible; */
   }
   .baner_div{
     position: absolute;
@@ -165,5 +153,4 @@
     min-width: 500px;
   }
 }
-
 </style>
