@@ -77,14 +77,13 @@ export default defineNuxtConfig({
   },
 
   image: {
-    dir: path.join(process.cwd(), 'public'),
+    dir: path.join(process.cwd(), '../public'),
     presets: {
       cover: {
         modifiers: {
           fit: "cover",
           width: 327,
           height: 327,
-          densities: "x1",
         },
       },
     },
