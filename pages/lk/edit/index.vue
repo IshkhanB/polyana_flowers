@@ -3,27 +3,32 @@
     <HeaderComp/>
     <div>
         <div>
-          <LkMenu/>
+          <LkMenu  style="position: static;"/>
         </div>
       <form class="forma_zapolneniya" method="post" @submit.prevent="upload">
-        
+        <label  style="font-size: 35px; padding: 10px;" >Форма заполнения!</label>
         <input type="text" name="title" v-model="title" placeholder="Заголовок">
+
+        <label class="labal-form" for="description">Красткое описание:</label>
         <textarea type="text" name="description" v-model="description" placeholder="Текст публикации"></textarea>
         
+        <label class="labal-form" for="type">Выберети тип:</label>
         <select name="type" id="type_id_select" v-model="type_id">
           <option v-for="t of types?.type" :key="t.id" :value="t.id">{{ t.title }}</option>
         </select>
         
-        <input type="number" name="price" v-model="price" placeholder="price">
-        <label for="sale">Скидка:</label>
-        <input type="number"  id="sale" name="sale" v-model="sale" placeholder="Введите скидку">
-        
-        <input type="text" name="newName" v-model="newName" placeholder="new filename">
-        <div style="transform: translate(25px, 10px);">
+        <label class="labal-form" for="price">Цена:</label>
+        <input type="number" name="price" v-model="price" placeholder="Цена">
 
-            <label for="file">Изображение:</label>
+        <label class="labal-form" for="sale">Скидка:</label>
+        <input type="number"  id="sale" name="sale" v-model="sale" placeholder="Цена со скидку">
+        
+        <label class="labal-form" for="newName">Имя кртинки:</label>
+        <input type="text" name="newName" v-model="newName" placeholder="Имя кртинки">
+        
+        <label class="labal-form" for="file">Изображение:</label>
+        <div style="transform: translate(25px, 10px);">
             <input type="file" id="file" ref="file" multiple @change="handleFileUpload" placeholder="Изображение">
-          
           <div class="preview-container">
             <div v-for="(image, index) in previewImages" :key="index" class="preview-item">
               <img :src="image" alt="Превью" class="preview-image" />
@@ -198,6 +203,10 @@ input,textarea {
 
 .remove-button:hover {
   background: rgba(255, 0, 0, 1);
+}
+.labal-form{
+  padding: 5px;
+  font-size: 15px;
 }
 </style>
 

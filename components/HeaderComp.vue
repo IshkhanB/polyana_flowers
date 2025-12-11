@@ -3,7 +3,7 @@
   <div class="heder_div substrate">
     <header class="header">
       <NuxtLink to="/" class="div_logo">
-       <NuxtImg class="header_logo"  src="/icon/mdi_flower-tulip-out.svg"/>
+       <img class="header_logo"  src="/icon/mdi_flower-tulip-out.svg"/>
         <h1 class="heder_h1"> <br>KRASNAYA POLYANA <br> FLOWER MARKET
          <!-- <p class="heder_p">Магазин доставки цветов по Сочи</p>  -->
          <!-- Магазин доставки цветов по Сочи -->

@@ -56,7 +56,7 @@ const useFiles = async (event: any) => {
         const newFileName = translit(fields.newName + ' ' + i ) + '.webp'
         i++
         console.log(`File [${name}]: filename: ${filename}, encoding: ${encoding}, mimeType: ${mimeType}`)
-        console.log(path.join(process.cwd(), 'public/img/img'))
+        console.log(path.join(process.cwd(), 'public/img'))
         const saveTo = path.join(process.cwd(), 'public/img', `${newFileName}`)
         // console.log('saveTo', saveTo)
         // file.pipe(fs.createWriteStream(saveTo))

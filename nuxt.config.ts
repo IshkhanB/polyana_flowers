@@ -82,11 +82,22 @@ export default defineNuxtConfig({
       cover: {
         modifiers: {
           fit: "cover",
+          position: 'center',
           width: 327,
           height: 327,
         },
       },
     },
+    // screens: {
+    //   ggg: 327,
+    // }
+    screens: {
+      'sm': 640,
+      'md': 768,
+      'lg': 1024,
+      'xl': 1280,
+      '2xl': 1536
+    }
   },
   
  

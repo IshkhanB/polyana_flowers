@@ -3,8 +3,10 @@
      <div class="div_cont">
         <!-- <nuxt-img  :src="images[2]"></nuxt-img> -->
         <swiper-container ref="containerRef" :init="true">
-          <swiper-slide v-for="img of product?.img" :key="img.id">
-            <NuxtImg  preset="cover" height="327" width="327px" :src="'img/'+img.img" ></NuxtImg>
+          <swiper-slide style="width: 327px; height: 327px;" v-for="img, i of product?.img" :key="img.id">
+            <NuxtImg preset="cover" :custom="true" v-slot="{ src }" :src="'img/'+img.img">
+              <img :src="src" :alt="`${product?.title} - фото ${i+1}`"/>
+            </NuxtImg>
           </swiper-slide>
         </swiper-container>
         <div class="div2">

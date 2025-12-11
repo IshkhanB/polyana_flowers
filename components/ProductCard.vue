@@ -5,7 +5,7 @@
         <ClientOnly class="card__top">
           <swiper-container ref="containerRef" :init="true">
             <swiper-slide class="swip card_image" v-for="img of product?.img" :key="img.id">
-              <NuxtImg preset="cover"   :src="'img/'+img.img" ></NuxtImg>
+              <img preset="cover" sizes="sm"  :src="'img/'+img.img" ></img>
             </swiper-slide>
           </swiper-container>
         </ClientOnly>
