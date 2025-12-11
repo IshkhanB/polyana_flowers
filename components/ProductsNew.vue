@@ -4,8 +4,9 @@
         <!-- <nuxt-img  :src="images[2]"></nuxt-img> -->
         <swiper-container ref="containerRef" :init="true">
           <swiper-slide style="width: 327px; height: 327px;" v-for="img, i of product?.img" :key="img.id">
-            <NuxtImg preset="cover" :custom="true" v-slot="{ src }" :src="'img/'+img.img">
-              <img :src="src" :alt="`${product?.title} - фото ${i+1}`"/>
+            <NuxtImg preset="cover" :custom="true" v-slot="{ src, isLoaded }" :src="'img/'+img.img">
+              <img v-if="isLoaded" :src="src" :alt="`${product?.title} - фото ${i+1}`"/>
+              <img v-else :src="'https://flowers-polyana.ru/_ipx/fit_cover&pos_center&s_32x32/'+img.img" :alt="`${product?.title} - плэйсхолдер ${i+1}`"/>
             </NuxtImg>
           </swiper-slide>
         </swiper-container>
