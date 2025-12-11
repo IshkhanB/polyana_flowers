@@ -1,6 +1,6 @@
 <template>
   <div class="fon_div">
-      <NuxtImg class="img_fon_after" src="icon/group_975_1.png" alt="Fon" />
+      <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" />
       <NuxtImg class="img_girl" src="icon/front_about_us.png" alt="girl-flowers" />
     <div class="fon_div_text">
     <p>FLOWER MARKET<br> больше, чем просто цветы </p>

@@ -3,7 +3,7 @@
      <div class="div_cont">
         <swiper-container ref="containerRef" :init="true">
           <swiper-slide style="width: 327px; height: 327px;" v-for="img, i of product?.img" :key="img.id">
-            <NuxtImg preset="cover" :src="'img/'+img.img" :preload="!i && preload" :loading="i?'lazy':''"></NuxtImg>
+            <NuxtImg preset="cover" :src="'img/'+img.img" :preload="!i && preload" :loading="i?'lazy':''"/>
             <!-- <NuxtImg preset="cover" :custom="true" v-slot="{ src, isLoaded }" :src="'img/'+img.img" :preload="!i && preload" :loading="i?'lazy':''">
               <img v-if="isLoaded" :src="src" :alt="`${product?.title} - фото ${i+1}`"/>
               <img v-else  style="width: 327px; height: 327px; filter: blur(5px);" :src="'/_ipx/fit_cover&pos_center&q_80&s_32x32/img/'+img.img" :alt="`${product?.title} - плэйсхолдер ${i+1}`"/>
@@ -21,7 +21,7 @@
               <div class="card_price">{{ product?.price }}</div>
             </div>
           <div class="card_bottom1">
-            <NuxtLink :to="`/${product?.type?.title}/${product?.id}`"  class="card_info"> Подробнее</NuxtLink>
+            <!-- <NuxtLink :to="`/${product?.type?.title}/${product?.id}`"  class="card_info"> Подробнее</NuxtLink> -->
             <!-- <button @click="cartStore.addToCart(product)" class="card_add">Добавить в корзину</button> -->
           </div>
         </div>

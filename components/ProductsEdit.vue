@@ -3,8 +3,8 @@
      <div class="div_cont">
         <!-- <nuxt-img  :src="images[2]"></nuxt-img> -->
         <swiper-container ref="containerRef" :init="true">
-          <swiper-slide v-for="img of product?.img" :key="img.id">
-            <NuxtImg  preset="cover" height="327" width="327px" :src="'img/'+img.img" ></NuxtImg>
+          <swiper-slide v-for="img, i of product?.img" :key="img.id">
+             <NuxtImg preset="cover" :src="'img/'+img.img" :preload="!i && preload" :loading="i?'lazy':''"/>
           </swiper-slide>
         </swiper-container>
         <div class="div2">
@@ -28,7 +28,7 @@
   </div>
 </template>
 <script setup lang="ts"> 
-const props = defineProps(['product','types', 'refresh'])
+const props = defineProps(['product','types', 'refresh', 'preload'])
 // const cartStore = useCart()
 
 const deleteCardWithImages = async (id:number)=>{
