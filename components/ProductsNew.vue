@@ -1,13 +1,13 @@
 <template>
   <div class="card" >
      <div class="div_cont">
-        <!-- <nuxt-img  :src="images[2]"></nuxt-img> -->
         <swiper-container ref="containerRef" :init="true">
           <swiper-slide style="width: 327px; height: 327px;" v-for="img, i of product?.img" :key="img.id">
-            <NuxtImg preset="cover" :custom="true" v-slot="{ src, isLoaded }" :src="'img/'+img.img">
+            <NuxtImg preset="cover" :src="'img/'+img.img" :preload="!i && preload" :loading="i?'lazy':''"></NuxtImg>
+            <!-- <NuxtImg preset="cover" :custom="true" v-slot="{ src, isLoaded }" :src="'img/'+img.img" :preload="!i && preload" :loading="i?'lazy':''">
               <img v-if="isLoaded" :src="src" :alt="`${product?.title} - фото ${i+1}`"/>
-              <img v-else  style="width: 327px; height: 327px; filter: blur(5px);" :src="'https://flowers-polyana.ru/_ipx/fit_cover&pos_center&s_32x32/img/'+img.img" :alt="`${product?.title} - плэйсхолдер ${i+1}`"/>
-            </NuxtImg>
+              <img v-else  style="width: 327px; height: 327px; filter: blur(5px);" :src="'/_ipx/fit_cover&pos_center&q_80&s_32x32/img/'+img.img" :alt="`${product?.title} - плэйсхолдер ${i+1}`"/>
+            </NuxtImg> -->
           </swiper-slide>
         </swiper-container>
         <div class="div2">
@@ -20,16 +20,16 @@
             <div v-else>
               <div class="card_price">{{ product?.price }}</div>
             </div>
-          <!-- <div class="card_bottom1">
+          <div class="card_bottom1">
             <NuxtLink :to="`/${product?.type?.title}/${product?.id}`"  class="card_info"> Подробнее</NuxtLink>
-            <button @click="cartStore.addToCart(product)" class="card_add">Добавить в корзину</button>
-          </div> -->
+            <!-- <button @click="cartStore.addToCart(product)" class="card_add">Добавить в корзину</button> -->
+          </div>
         </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps(['product','types'])
+const props = defineProps(['product','types', 'preload'])
 const cartStore = useCart()
 
 const containerRef = ref(null)
@@ -135,6 +135,8 @@ const swiper = useSwiper(containerRef, {
 swiper-slide>img {
   object-position: center;
   border-radius: 20px 20px 0 0;
+  height: 327px;
+  width: 327px;
 }
 .card_add {
   margin: 0 auto;

@@ -85,6 +85,7 @@ export default defineNuxtConfig({
           position: 'center',
           width: 327,
           height: 327,
+          quality:80,
         },
       },
     },

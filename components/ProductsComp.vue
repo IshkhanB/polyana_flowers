@@ -2,7 +2,7 @@
 <template>
   <div class="anchor" style="transform: translateY(-160px);" id="catalog"></div>
   <div class="cards">
-    <ProductsNew v-for="product of paginatedProducts" :product="product" :key="product.id" /> 
+    <ProductsNew v-for="product,i of paginatedProducts" :product="product" :key="product.id" :preload="i<8" /> 
   </div>
 
  
