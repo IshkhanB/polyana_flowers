@@ -1,6 +1,6 @@
 <template>
   <div class="fon_service">
-   <NuxtImg densities="x2" class="img_service" src="icon/fonx3.1.jpeg" format="webp" alt="fon"></NuxtImg>
+   <!-- <NuxtImg densities="x2" class="img_service" src="icon/fonx3.1.jpeg" format="webp" alt="fon"></NuxtImg> -->
    <div class="text_service">
      <p class="text1_service">СЕРВИС</p>
      <p class="text2_service">ЭСТЕТИКА</p>
