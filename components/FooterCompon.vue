@@ -1,7 +1,7 @@
 <template>
+  <h1 class="name_footer">FLOWER MARKET</h1>
   <div class="footer_fon footer_grid">
     <div class="information">
-      <h1>FLOWER MARKET</h1>
       ИП ТЕРЗИЯН РУЗАННА СЕРГЕЕВНА 
       <br>
       ИНН: 231907166090
@@ -34,14 +34,18 @@
     <div class="footer_contacts">
       <h1> Контакты</h1>
       <nav class="nav_footer">
-        <p >+79881878668</p>
-        <a target="_blank" href="https://api.whatsapp.com/send/?phone=79881878668&text&type=phone_number&app_absent=0" >Написать в WhatsApp</a>
-        <a target="_blank" href="https://t.me/+79881878668">Написать в Telegram</a>
+        <p >+7(988)500-51-21</p>
+        <br>
         <p >Адрес:</p>
-        <p >354000 г. Сочи, ул. О.Кошевого, д. 21Б</p>
+        <br>
+        <p >Краснодарский край, г.Сочи <br> с.Эстосадок, ул.Горная Карусель</p>
+        <br>
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=79885005121&text&type=phone_number&app_absent=0" >Написать в WhatsApp</a>
+        <br>
+        <a target="_blank" href="https://t.me/Flower_market_kp">Написать в Telegram</a>
       </nav>
     </div>
-    <hr >
+    <hr class="hr-media">
     <div class="footer_footer">
       <div class="nav_footer" >
         <a href="/privacy">Политика конфиденциальности</a>
@@ -72,7 +76,7 @@ const goToAnchor = (hash:string)=>{
   grid-area: 1 / 1 / 2 / 2;
   margin: 30px auto;
   max-width: 1400px;
-  height: 500px;
+  /* height: 500px; */
   background-color: #fcfcfc;
   box-sizing: border-box;
 }
@@ -80,12 +84,15 @@ const goToAnchor = (hash:string)=>{
   line-height: 30px;
   color:#d0d0d0;
 }
-.information>h1{
+.name_footer{
   background-image: url(public/icon/mdi_flower-tulip-out.svg);
   background-repeat: no-repeat;
-  padding-left: 35px;
+  padding: 30px;
   background-size: 35px;
   background-position: left;
+  padding-left: 35px;
+}
+.information>h1{
   font-size: 25px;
   color: #595959;
 }
@@ -139,6 +146,37 @@ a:hover{
   background-color: #c9c9c9;
   border-radius: 0 20px 0 0 ;
   padding: 0 0 0 0px;
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 640px) {
+  .footer_grid{
+    grid-template-columns:1fr;
+    grid-template-rows: 200px 200px 300px 200px;
+    box-sizing: border-box;
+  }
+  .nav_footer{
+    display: block;
+  }
+  .information{
+    grid-area: 4 / 1 / 3 / 1;
+  }
+  .menu_footer{
+    grid-area: 2 / 3 / 2 / 1;
+  }
+  .footer_contacts{
+    grid-area: 1 / 1 / 1 / 1;
+  }
+  .footer_footer{
+    display: none;
+  }
+  .hr-media{
+    display: none;
+  }
+  .footer_fon{
+    background-color: #f9f7f4 ;
+  }
+  
 }
 
 </style>
