@@ -1,7 +1,7 @@
 <template>
   <HeaderComp/>
   <slot></slot>
-  <!-- <FooterCompon/> -->
+  <FooterCompon/>
   <Teleport to="#teleports">
     <CartClient/>
   </Teleport>

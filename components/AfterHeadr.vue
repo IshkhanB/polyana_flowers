@@ -1,10 +1,13 @@
 <template>
   <div class="fon_div">
-      <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" />
+      <!-- <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" /> -->
       <NuxtImg class="img_girl" src="icon/front_about_us.png" alt="girl-flowers" />
-    <div class="fon_div_text">
+    <!-- <div class="fon_div_text">
     <p>FLOWER MARKET<br> больше, чем просто цветы </p>
-    </div>
+    </div> -->
+    <div class="sign-wrap-2 fon_div_text">
+    <span class="sign_word">Неоновый текст</span>
+</div>
   </div>
 </template>
 
@@ -14,7 +17,7 @@
   margin: 0 auto;
   padding: 0;
   max-width: 1400px ;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   border-radius: 25px;
 }
@@ -24,7 +27,7 @@
 }
 .fon_div_text>p{
   position: absolute;
-  top: 15%;
+  bottom: 15%;
   left: 5%;
   color: #595959;
   font-size: 50px;
@@ -36,7 +39,7 @@
 
 .img_fon_after{
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   height: 400px;
   margin: 0 auto;
@@ -49,33 +52,39 @@
   overflow: hidden;
   object-fit: cover;
   position: absolute;
-  top: -90px;
+  top: 0px;
   right: 0px;
   overflow-y: visible;
 }
-.baner_div{
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* .sign-wrap-2 {
+    background: #337AB7;
+    text-align: center;
+    padding: 60px 20px;
 }
-.baner_div>div{
-  padding: 10px;
-  text-align: center;
-  background-color: #c0c0c0a8;
-  border-radius: 5px;
-  border:  0px solid black;
-  box-sizing: border-box;
+.sign-wrap-2 .sign_word {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    animation: 2s neon-2 alternate-reverse infinite;
 }
-.baner_div>p{
-  display: block;
-  filter: blur(0px);
-}
-
-
+@keyframes neon-2 {
+    from {
+        text-shadow: 0 0 5px #FFF,
+        0 0 10px #FFF,
+        0 0 15px #FFF,
+        0 0 20px #BFE2FF;
+    }
+    to {
+        text-shadow: 0 0 20px #BFE2FF,
+        0 0 35px #BFE2FF,
+        0 0 40px #BFE2FF,
+        0 0 50px #BFE2FF,
+        0 0 800px #BFE2FF;
+    }
+} */
 @media screen and (max-width: 1024px) {
   .img_girl{
     top: 40px;
@@ -98,59 +107,49 @@
     text-align: center;
   }
   .fon_div_text>p{
-    position: absolute;
-    top: 15%;
+    top: 30%;
     left: 5%;
     color: #595959;
-    font-size: 50px;
-    font-family: 'Cormorant', Arial, sans-serif;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    line-height: 63px;
   }
 
   .img_fon_after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 400px;
-    margin: 0 auto;
-    width: 100%;
-    min-width: 500px;
-    object-fit: cover;
+    bottom:-45px;
+    left: 0px;
   }
   .img_girl{
-    width: 600px;
-    overflow: hidden;
-    object-fit: cover;
-    position: absolute;
-    top: -90px;
-    right: 0px;
-    /* overflow-wrap: visible; */
+    top: 0px;
   }
-  .baner_div{
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .baner_div>div{
-    padding: 10px;
+
+  /* .sign-wrap-2 {
+    background: #337AB7;
     text-align: center;
-    background-color: #c0c0c0a8;
-    border-radius: 5px;
-    border:  0px solid black;
-    box-sizing: border-box;
-  }
-  .baner_div>p{
-    display: block;
-    filter: blur(0px);
-  }
-  .img_fon_header{
-    min-width: 500px;
-  }
+    padding: 60px 20px;
+} */
+/* .sign-wrap-2 .sign_word {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #2a2929;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    animation: 2s neon-2 alternate-reverse infinite;
+} */
+/* @keyframes neon-2 {
+    from {
+        text-shadow: 0 0 5px #FFF,
+        0 0 10px #FFF,
+        0 0 15px #FFF,
+        0 0 20px #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff,
+        0 0 35px #fff,
+        0 0 40px #fff,
+        0 0 50px #fff,
+        0 0 800px #fff;
+    }
+} */
+
+
 }
 </style>
