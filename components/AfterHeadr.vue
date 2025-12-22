@@ -92,6 +92,7 @@
   .fon_div_text>p{
     top: 20%;
     left: 5%;
+    width: 90%;
   
   }
   /* .sign-wrap-2 {
