@@ -27,7 +27,7 @@
 }
 .fon_div_text>p{
   position: absolute;
-  bottom: 15%;
+  bottom: 25%;
   left: 5%;
   color: #595959;
   font-size: 50px;
@@ -56,35 +56,7 @@
   right: 0px;
   overflow-y: visible;
 }
-/* .sign-wrap-2 {
-    background: #337AB7;
-    text-align: center;
-    padding: 60px 20px;
-}
-.sign-wrap-2 .sign_word {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 50px;
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    animation: 2s neon-2 alternate-reverse infinite;
-}
-@keyframes neon-2 {
-    from {
-        text-shadow: 0 0 5px #FFF,
-        0 0 10px #FFF,
-        0 0 15px #FFF,
-        0 0 20px #BFE2FF;
-    }
-    to {
-        text-shadow: 0 0 20px #BFE2FF,
-        0 0 35px #BFE2FF,
-        0 0 40px #BFE2FF,
-        0 0 50px #BFE2FF,
-        0 0 800px #BFE2FF;
-    }
-} */
+
 @media screen and (max-width: 1024px) {
   .img_girl{
     top: 40px;
@@ -106,12 +78,6 @@
     margin: 0 auto;
     text-align: center;
   }
-  .fon_div_text>p{
-    top: 30%;
-    left: 5%;
-    color: #595959;
-  }
-
   .img_fon_after{
     bottom:-45px;
     left: 0px;
@@ -119,7 +85,12 @@
   .img_girl{
     top: 0px;
   }
-
+  .fon_div_text>p{
+    top: 20%;
+    left: 5%;
+    color: #e9be98;
+    backdrop-filter: brightness(0.5);
+  }
   /* .sign-wrap-2 {
     background: #337AB7;
     text-align: center;
@@ -149,7 +120,5 @@
         0 0 800px #fff;
     }
 } */
-
-
 }
 </style>
