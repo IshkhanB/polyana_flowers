@@ -1,6 +1,6 @@
 <template>
   <div class="fon_div">
-      <!-- <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" /> -->
+      <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" />
       <NuxtImg class="img_girl" src="icon/front_about_us.png" alt="girl-flowers" />
     <div class="fon_div_text">
     <p>FLOWER MARKET<br> больше, чем просто цветы </p>
@@ -29,12 +29,15 @@
   position: absolute;
   bottom: 25%;
   left: 5%;
-  color: #595959;
-  font-size: 50px;
+  font-size: 40px;
+  max-width: 500px;
   font-family: 'Cormorant', Arial, sans-serif;
   letter-spacing: -1px;
   text-transform: uppercase;
   line-height: 63px;
+  color: #e9be98;
+  backdrop-filter: brightness(0.5);
+  align-content: center
 }
 
 .img_fon_after{
@@ -89,8 +92,7 @@
   .fon_div_text>p{
     top: 20%;
     left: 5%;
-    color: #e9be98;
-    backdrop-filter: brightness(0.5);
+  
   }
   /* .sign-wrap-2 {
     background: #337AB7;
