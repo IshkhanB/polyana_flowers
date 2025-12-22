@@ -2,12 +2,12 @@
   <div class="fon_div">
       <!-- <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" /> -->
       <NuxtImg class="img_girl" src="icon/front_about_us.png" alt="girl-flowers" />
-    <!-- <div class="fon_div_text">
+    <div class="fon_div_text">
     <p>FLOWER MARKET<br> больше, чем просто цветы </p>
-    </div> -->
-    <div class="sign-wrap-2 fon_div_text">
+    </div>
+    <!-- <div class="sign-wrap-2 fon_div_text">
     <span class="sign_word">Неоновый текст</span>
-</div>
+</div> -->
   </div>
 </template>
 
