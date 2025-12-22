@@ -88,10 +88,11 @@ h1{
 .name_footer{
   background-image: url(public/icon/mdi_flower-tulip-out.svg);
   background-repeat: no-repeat;
-  padding: 30px;
+  padding: 15px;
   background-size: 35px;
   background-position: left;
   padding-left: 35px;
+  font-size: 30px;
   grid-area: 1 / 1 / 2 / 2;
 }
 .information{
@@ -176,11 +177,18 @@ a:hover{
     display: none;
   }
   .nav_footer{
+    padding: 5px;
     line-height: 20px;
     text-align: center;
   }
   .col-siz-h1{
     margin: 13px auto;
+  }
+  p{
+    padding: 5px;
+  }
+  a{
+    padding: 5px;
   }
 }
 

@@ -84,6 +84,7 @@
   }
   .img_girl{
     top: 0px;
+    right: 0px;
   }
   .fon_div_text>p{
     top: 20%;

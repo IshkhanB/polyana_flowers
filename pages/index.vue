@@ -4,7 +4,7 @@
     <PropuskComp/>
     <!-- <FilterMenu/> -->
     <ProductsComp :products="products"/>
-    <AboutUs/>
+    <!-- <AboutUs/> -->
     <ServiceCulture/>
     <!-- <DeliveryMap :delivery="deliveryStore.arr"/> -->
     <!-- <HowPay/> -->
