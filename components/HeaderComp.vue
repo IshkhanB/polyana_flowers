@@ -151,18 +151,18 @@ const goToAnchor = (hash:string)=>{
   justify-content: center;
 }
 @media screen and (max-width: 1024px) {
-  .header_nav{
+  /* .header_nav{
     display: none;
-  }
+  } */
   
 }
   @media screen and (max-width: 640px) {
-  .header_nav{
+  /* .header_nav{
     display: none;
-  }
-  .heder_p{
+  } */
+  /* .heder_p{
     display: none;
-  }
+  } */
   .iconci_v_div{
     margin: auto;
     height: 40px;
