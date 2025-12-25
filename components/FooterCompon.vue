@@ -57,7 +57,7 @@
         <iframe src="https://yandex.ru/sprav/widget/rating-badge/237768002038?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe>
       </div>
       <div class="div-non">
-        <a href="/snake">Rазработано Мной</a>
+        <a href="/snake_game">Rазработано Мной</a>
         <!-- <iframe src="https://yandex.ru/sprav/widget/rating-badge/237768002038?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe> -->
       </div>
     </div>
