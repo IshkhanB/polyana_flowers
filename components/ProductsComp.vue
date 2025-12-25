@@ -23,20 +23,21 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-const props = defineProps(["products"])
+import type { Product } from '~/generated/prisma'
+const props = defineProps<{products:Product[]}>()
 const itemsPerPage = ref(12)
 const currentPage = ref(1)
 
 // Вычисляем общее количество страниц
 const totalPages = computed(() => {
-  return Math.ceil(props.products.length / itemsPerPage.value)
+  return Math.ceil(props.products.length / itemsPerPage.value) 
 })
 
 // Вычисляем продукты для текущей страницы
 const paginatedProducts = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage.value
   const end = start + itemsPerPage.value
-  return props.products.slice(start, end)
+  return props.products?.slice(start, end)
 })
 
 </script>
@@ -73,5 +74,9 @@ const paginatedProducts = computed(() => {
 .pagination-info {
   font-size: 16px;
   color: #fff;
+  }
+
+  @media screen {
+    
   }
 </style>

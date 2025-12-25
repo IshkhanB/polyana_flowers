@@ -40,7 +40,7 @@
         <div class="socset">
           <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send/?phone=79885005121&text&type=phone_number&app_absent=0" ></a>
           <a class="telegram" target="_blank" href="https://t.me/Flower_market_kp"></a>
-          <!-- <a class="telegram" target="_blank" href="https://instagram.com/Flower_market_kp"></a> -->
+          <a class="instagram" target="_blank" href="https://instagram.com/flowermarket_kp"></a>
         </div>
       </nav>
     </div>
@@ -57,7 +57,7 @@
         <iframe src="https://yandex.ru/sprav/widget/rating-badge/237768002038?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe>
       </div>
       <div class="div-non">
-        <p>Rазработано Мной</p>
+        <a href="/snake">Rазработано Мной</a>
         <!-- <iframe src="https://yandex.ru/sprav/widget/rating-badge/237768002038?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe> -->
       </div>
     </div>
@@ -151,7 +151,14 @@ hr {
   background-repeat: no-repeat;
   padding: 25px;
   background-size: contain;
-  margin-left: 12px;
+  margin-left: 10px;
+}
+.instagram{
+  background-image: url(public/icon/in.svg);
+  background-repeat: no-repeat;
+  padding: 25px;
+  background-size: contain;
+  margin-left: 14px;
 }
 .socset{
   margin: 20px 0 auto;

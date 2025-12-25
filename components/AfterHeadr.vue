@@ -73,9 +73,9 @@
     right: 10px;
   }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:640px) {
   .fon_div{
-    max-width: 500px ;
+    max-width: 640px ;
     height: 400px;
   }
   .fon_div_text{

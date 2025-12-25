@@ -13,8 +13,9 @@
 </template>
 
 <script setup lang="ts">
-const {data} = await useFetch(`/api/product`)
-const products = ref(data.value?.products)
+import type { Product } from '~/generated/prisma'
+const {data} = await useFetch<{products: Product[]}>(`/api/product`)
+const products = data.value?.products as Product[]
 const reviewsStore = useReviews()
 const deliveryStore = useDelivery()
 </script>

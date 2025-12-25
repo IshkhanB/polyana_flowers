@@ -115,7 +115,7 @@ const swiper = useSwiper(containerRef, {
 }
 .div_cont{
   display: grid;
-  grid-template-columns: 325px;
+  grid-template-columns: 327px;
   grid-template-rows:327px 200px;
   grid-template-areas:
   'div1'
