@@ -1,15 +1,11 @@
 <template>
-  <div class="snake-game-container">
-    <h2>Змейка</h2>
-    <canvas
-      ref="gameCanvas"
-      :width="canvasWidth"
-      :height="canvasHeight"
-      tabindex="0"
-      style="border: 2px solid #333; display: block; margin: 0 auto;" 
-    />
-    <div style="text-align: center; margin-top: 12px;">
-      <button @click="restartGame" :disabled="!gameCanvas">Начать заново</button>
+  <div class="fon_snake">
+    <div class="snake-game-container">
+      <h2>Змейка</h2>
+      <canvas ref="gameCanvas" :width="canvasWidth" :height="canvasHeight" tabindex="0" style=" background-color: #fffbf6; border: 10px solid #8b3d3d; display: block; margin: 0 auto;" />
+      <div style="text-align: center; margin-top: 12px;">
+        <button @click="restartGame" :disabled="!gameCanvas">Начать заново</button>
+      </div>
     </div>
   </div>
 </template>
@@ -22,8 +18,8 @@ interface Point {
 }
 
 const gridSize = 20;
-const canvasWidth = 700;
-const canvasHeight = 700;
+const canvasWidth = 900;
+const canvasHeight = 900;
 const gridWidth = canvasWidth / gridSize;
 const gridHeight = canvasHeight / gridSize;
 
@@ -186,6 +182,11 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+ .fon_snake{
+  background-color: rgb(240, 250, 238);
+  width: 100vw;
+  height: 100vh;
+}  
 .snake-game-container {
   display: flex;
   flex-direction: column;
