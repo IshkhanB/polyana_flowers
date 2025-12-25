@@ -3,7 +3,7 @@
       <NuxtImg class="img_fon_after" src="icon/Group_975_1.png" alt="Fon" />
       <NuxtImg class="img_girl" src="icon/front_about_us.png" alt="girl-flowers" />
     <div class="fon_div_text">
-    <p>FLOWER MARKET<br> больше, чем просто цветы </p>
+    <p style="text-shadow: aquamarine;">FLOWER MARKET<br> больше, чем просто цветы </p>
     </div>
     <!-- <div class="sign-wrap-2 fon_div_text">
     <span class="sign_word">Неоновый текст</span>
@@ -37,6 +37,7 @@
   line-height: 63px;
   color: #e9be98;
   backdrop-filter: brightness(0.5);
+  border-radius: 20px;
   align-content: center
 }
 
@@ -62,14 +63,14 @@
 
 @media screen and (max-width: 1024px) {
   .img_girl{
-    top: 40px;
-    right: 40px;
+    top: 0px;
+    right: 20px;
   }
 }
 @media screen and (max-width: 800px) {
   .img_girl {
-    top: 70px;
-    right: 80px;
+    top: 0px;
+    right: 10px;
   }
 }
 @media screen and (max-width:500px) {
@@ -95,34 +96,6 @@
     width: 90%;
   
   }
-  /* .sign-wrap-2 {
-    background: #337AB7;
-    text-align: center;
-    padding: 60px 20px;
-} */
-/* .sign-wrap-2 .sign_word {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 50px;
-    color: #2a2929;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    animation: 2s neon-2 alternate-reverse infinite;
-} */
-/* @keyframes neon-2 {
-    from {
-        text-shadow: 0 0 5px #FFF,
-        0 0 10px #FFF,
-        0 0 15px #FFF,
-        0 0 20px #fff;
-    }
-    to {
-        text-shadow: 0 0 20px #fff,
-        0 0 35px #fff,
-        0 0 40px #fff,
-        0 0 50px #fff,
-        0 0 800px #fff;
-    }
-} */
+  
 }
 </style>

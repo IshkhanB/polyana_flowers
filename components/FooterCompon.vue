@@ -26,7 +26,7 @@
         <a class="heder_a" href="/#catalog" >Каталог</a>
         <!-- <a href="/#catalog" @click.prevent="goToAnchor('/#catalog')">Каталог</a> -->
         <a href="/#delivery" @click.prevent="goToAnchor('/#delivery')">Доставка и оплата</a>
-        <p >FAQ</p>
+        <a href="#">FAQ</a>
         <a href="/about_us" @click.prevent="goToAnchor('#about_us')">О нас</a>
         <a href="/reviews" @click.prevent="goToAnchor('#reviews')">Отзывы</a>
       </nav>
@@ -34,11 +34,14 @@
     <div class="footer_contacts">
       <h1 class="col-siz-h1"> Контакты</h1>
       <nav class="nav_footer">
-        <p >+7(988)500-51-21</p>
-        <p >Адрес:</p>
+        <a href="tel:+79885005121" itemprop="telephone">+7(988)500-51-21</a>
+        <!-- <p >Адрес:</p> -->
         <p >Краснодарский край, г.Сочи <br> с.Эстосадок, ул.Горная Карусель</p>
-        <a target="_blank" href="https://api.whatsapp.com/send/?phone=79885005121&text&type=phone_number&app_absent=0" >Написать в WhatsApp</a>
-        <a target="_blank" href="https://t.me/Flower_market_kp">Написать в Telegram</a>
+        <div class="socset">
+          <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send/?phone=79885005121&text&type=phone_number&app_absent=0" ></a>
+          <a class="telegram" target="_blank" href="https://t.me/Flower_market_kp"></a>
+          <!-- <a class="telegram" target="_blank" href="https://instagram.com/Flower_market_kp"></a> -->
+        </div>
       </nav>
     </div>
     <hr class="hr-media">
@@ -134,11 +137,25 @@ hr {
   margin: 20px auto;
   border: 1px solid #c9c9c9;
 }
-a:hover{
-  border: #c9c9c9;
-  background-color: #c9c9c9;
-  border-radius: 0 20px 0 0 ;
-  padding: 0 0 0 0px;
+.nav_footer>a:hover{
+  color: #e9be98;;
+}
+.whatsapp{
+  background-image: url(public/icon/wa.svg);
+  background-repeat: no-repeat;
+  padding: 30px;
+  background-size:contain;
+}
+.telegram{
+  background-image: url(public/icon/tg.svg);
+  background-repeat: no-repeat;
+  padding: 25px;
+  background-size: contain;
+  margin-left: 12px;
+}
+.socset{
+  margin: 20px 0 auto;
+  padding: 25px;
 }
 @media screen and (max-width: 1024px) {
 }
@@ -177,18 +194,20 @@ a:hover{
     display: none;
   }
   .nav_footer{
-    padding: 5px;
-    line-height: 20px;
+    line-height: 15px;
     text-align: center;
   }
   .col-siz-h1{
-    margin: 13px auto;
+    margin: 0 auto;
   }
   p{
     padding: 5px;
+    width: 240px;
   }
   a{
-    padding: 5px;
+    margin: 2px auto;
+    padding: 2px;
+    width: 180px;
   }
 }
 
