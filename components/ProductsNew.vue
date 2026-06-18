@@ -17,8 +17,10 @@
               <div class="card_price">{{ product?.price }}</div>
             </div>
           <div class="card_bottom1">
-            <!-- <NuxtLink :to="`/${product?.type?.title}/${product?.id}`"  class="card_info"> Подробнее</NuxtLink> -->
-            <!-- <button @click="cartStore.addToCart(product)" class="card_add">Добавить в корзину</button> -->
+            <slot>
+              <!-- <NuxtLink :to="`/${product?.type?.title}/${product?.id}`"  class="card_info"> Подробнее</NuxtLink> -->
+              <!-- <button @click="cartStore.addToCart(product)" class="card_add">Добавить в корзину</button> -->
+            </slot>
           </div>
         </div>
     </div>

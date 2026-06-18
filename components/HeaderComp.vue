@@ -26,11 +26,10 @@
         <!-- <p class="icon_search">
           <NuxtImg class="icon" src="~/assets/icon/ic_outline-shopping-.svg" alt="Корзина" />
         </p> -->
-        <!-- <button class="icon-button" aria-label="Корзина" @click="cartStore.visible = true" >
+        <button class="icon-button" aria-label="Корзина" @click="cartStore.visible = true" >
           <NuxtImg class="icon" src="icon/ic_outline-shopping-.svg" alt="Корзина"/>
           <span class="icon-count">{{ cartStore.count}}</span> 
-          
-        </button> -->
+        </button>
       </div>
     </header>
   </div>

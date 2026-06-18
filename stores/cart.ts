@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useCart = defineStore('cart', () => {
-  const arr = ref([] as any)
+  const arr = ref([] as any[])
   const visible = ref(false)
   const count = computed(() =>{
     return arr.value.reduce((a:number,el:any) =>{

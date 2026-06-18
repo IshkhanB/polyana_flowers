@@ -18,8 +18,8 @@ interface Point {
 }
 
 const gridSize = 20;
-const canvasWidth = 900;
-const canvasHeight = 900;
+const canvasWidth = 700;
+const canvasHeight = 700;
 const gridWidth = canvasWidth / gridSize;
 const gridHeight = canvasHeight / gridSize;
 

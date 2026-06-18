@@ -39,14 +39,13 @@
         <input style="margin-top:30px;" type="submit" value="Опубликовать">
       </form>
       <div class="cards" style="padding-top: 50px;">
-        <ProductsEdit v-for="product of data?.products" :product="product" :refresh="refresh" :key="product.id" />
+        <ProductsCardLK v-for="product of data?.products" :product="product" :refresh="refresh" :key="product.id" />
       </div>    
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ProductsEdit from '~/components/ProductsEdit.vue'
 import { useUsers } from '~/stores/user'
 const userStore = useUsers()
 
